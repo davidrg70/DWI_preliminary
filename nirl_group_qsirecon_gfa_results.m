@@ -42,6 +42,8 @@ elseif exist(proj_dir)
 end
 proj_dir_ext =  fullfile(proj_dir, '/derivatives/', qsireconv, '/derivatives/qsirecon-DSIStudio/');
 
+% example: proj_dir_ext = '/proj/belgerlab/projects/data/PASS/derivatives/qsiprep-1.0.0rc1/derivatives/qsirecon-1.0.0rc1/derivatives/qsirecon-DSIStudio/'
+
 % check if qsirecon dir/data exists
 if ~exist(proj_dir_ext)
     warning('Expected directory: %s', proj_dir_ext);
